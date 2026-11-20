@@ -1,0 +1,9 @@
+<!-- Dentro de <manifest>, antes de <application>: -->
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+<!-- Dentro de <application ...> agrega (usesCleartextTraffic SOLO en desarrollo): -->
+<!-- android:usesCleartextTraffic="true" -->
+<meta-data
+    android:name="com.google.firebase.messaging.default_notification_channel_id"
+    android:value="cartas" />
